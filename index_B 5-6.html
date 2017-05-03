@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BASE on BOOTSTRAP</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index_B.css">
+</head>
+
+<body>
+  <h2>#5 - Работа с таблицами в Bootstrap</h2>
+  <!-- /////////// planul de invatare /////////// -->
+  <!-- #5 - Работа с таблицами в Bootstrap -->
+  <!-- #6 - Кнопки и группы кнопок -->
+
+  <div class="table-responsive">
+    <!-- crearea tabelului #5 -->
+    <table class="table table-bordered table-hover">
+      <!-- class="table-striped" - in rinduri/benzi zebra -->
+      <thead>
+        <tr class="active">
+          <th>Nume</th>
+          <th>Nr. de telefon</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- tbody>(tr>td*3)*3 -->
+        <tr>
+          <td class="success">Costea</td>
+          <td>69630922</td>
+          <td>Vasile@ga.com</td>
+        </tr>
+        <tr>
+          <td>Misa</td>
+          <td class="info">565656</td>
+          <td>Misa@ga.com</td>
+        </tr>
+        <tr>
+          <td>ТШГР</td>
+          <td>9889889</td>
+          <td class="warning">kkk@ga.ru</td>
+        </tr>
+        <tr>
+          <td>итма</td>
+          <td>+889</td>
+          <td class="danger">итма@ga.ru</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- /crearea tabelului #5 -->
+  <div>
+    <!-- div>(div.cl1*3)span*3>h3+p -->
+    <div> <span>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <h3></h3>
+    <p></p>
+  </span> <span>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <h3></h3>
+    <p></p>
+  </span>
+      <span>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <div class="cl1"></div>
+    <h3></h3>
+    <p></p>
+  </span> </div>
+    <!-- /div>(div.cl1*3)span*3>h3+p -->
+    <!-- div>(div.cl1*3)>span*3>h3+p -->
+    <div>
+      <div class="cl1"></div>
+      <div class="cl1"></div>
+      <div class="cl1"></div> <span>
+    <h3></h3>
+    <p></p>
+  </span> <span>
+    <h3></h3>
+    <p></p>
+  </span> <span>
+    <h3></h3>
+    <p></p>
+  </span> </div>
+    <!-- /div>(div.cl1*3)>span*3>h3+p -->
+
+    <h2>#6 - Кнопки и группы кнопок</h2>
+    <button type="button" name="button">Button</button>
+    <!-- #6 - Кнопки и группы кнопок -->
+    <button class="btn btn-defoult">Btn standard</button>
+    <input type="submit" class="btn btn-primary" name="" value="Btn de baza">
+    <input type="button" class="btn btn-success" value="Btn de confirmare">
+    <a href="#" class="btn btn-info" role="button">Btn de informare / instiintare</a>
+    <button class="btn btn-warning">Btn de atentionare"</button>
+    <button class="btn btn-link">Btn sub forma de link"</button>
+    <button class="btn btn-danger">Btn de anulare / cancel</button>
+    <br><br>
+    <!-- dirijarea cu marimea butoanelor -->
+    <button class="btn btn-defoult btn-lg">Btn standard</button>
+    <button class="btn btn-defoult btn-md">Btn standard</button>
+    <button class="btn btn-defoult btn-sm">Btn standard</button>
+    <button class="btn btn-defoult btn-xs">Btn standard</button>
+    <br><br>
+    <button class="btn btn-success btn-md btn-block">Btn standard de confirmare pe intreaga fereastra</button>
+    <br><br>
+    <button class="btn btn-defoult btn-lg active">Btn standard</button>
+    <button class="btn btn-defoult btn-lg disabled">Btn standard</button>
+    <br><br>
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group btn-group-md" data-toggle="buttons">
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_1
+      </label>
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_2
+      </label>
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_3
+      </label>
+      </div>
+
+      <div class="btn-group btn-group-md" data-toggle="buttons">
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_11
+      </label>
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_21
+      </label>
+        <label class="btn btn-primary">
+      <input type="checkbox"> Parametr_31
+      </label>
+      </div>
+    </div>
+    <br><br>
+    <div class="btn-group-vertical btn-group-md" data-toggle="buttons">
+      <label class="btn btn-primary">
+    <input type="checkbox"> Parametr_21
+    </label>
+      <label class="btn btn-primary">
+    <input type="checkbox"> Parametr_22
+    </label>
+      <label class="btn btn-primary">
+    <input type="checkbox"> Parametr_23
+    </label>
+    </div>
+    <!-- /#6 - Кнопки и группы кнопок -->
+
+
+
+
+
+
+    <footer class="container-fluid" style="background-color: rgb(200,200,200)"> <br> <mark>Sursa:
+                                                                                          </mark> <a href="https://itproger.com/">https://itproger.com/</a> </footer>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/index_B.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>form+</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index_B.css">
+</head>
+
+<body>
+
+  <!-- #7 - Создание форм и полей -->
+  <div class="container">
+    <form action="" role="form" class="form-horizontal">
+      <div class="form-group ">
+        <label for="email" class="control-label col-md-2">E-mail</label>
+        <div class="col-md-10">
+          <input type="email" class="form-control" id="email" placeholder="Introdiceti e-mailul">
+          <p class="help-block">Text pentu indicatii, ...</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="control-label col-md-2">Parola</label>
+        <div class="col-md-10">
+          <input type="password" class="form-control" id="password" placeholder="Parola ...">
+          <p class="help-block">Text pentu indicatii, ...</p>
+        </div>
+      </div>
+
+      <!-- butoane Radio -->
+      <div class="radio-inline">
+        <label>
+        <input type="radio" name="optionRadio" id="radio1" value="option1" checked>Primul element </label>
+      </div>
+      <div class="radio-inline">
+        <label>
+        <input type="radio" name="optionRadio" id="radio1" value="option2" >Al doile element </label>
+      </div>
+      <!-- /butoane Radio -->
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <div class="checkbox">
+        <label for="password">
+          <input type="checkbox"> Checkbox
+        </label>
+      </div>
+      <button type="button" name="button" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+  <hr>
+  <div class="container">
+    <form class="form-horizontal">
+      <div class="form-group ">
+        <label class="control-label col-sm-2">E-mail</label>
+        <div class="col-sm-10">
+          <!-- se include text static, in loc de input -->
+          <p class="form-control-static">Text@test.net</p>
+        </div>
+      </div>
+
+      <div class="form-group has-error">
+        <!-- In cazul cind sa comis o eroare, se poate de adaugat urmateoarea class="has-error" -->
+        <!-- In cazul cind e necesar de preintimpinat, se poate de adaugat urmateoarea class="has-warning" -->
+        <!-- In cazul cind sa introdus datele corect, se poate de adaugat urmateoarea class="has-success" -->
+        <label for="pass" class="control-label col-sm-2">Parola</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control input-sx" id="pass" placeholder="Introduceti parola ...">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- /#7 - Создание форм и полей -->
+
+  <!-- #8 - Иконочный шрифт и изображения -->
+  <!-- /#8 - Иконочный шрифт и изображения -->
+
+</body>
+
+</html>
+>
